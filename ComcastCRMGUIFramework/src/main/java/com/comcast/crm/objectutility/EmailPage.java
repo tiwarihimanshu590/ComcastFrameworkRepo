@@ -17,8 +17,15 @@ public class EmailPage {
 	@FindBy(linkText = "My Mails")
 	private WebElement myMailLink;
 	
+	@FindBy(linkText = "Qualified Mails (As Contacts)")
+	private WebElement qualifiedMailLink;
+	
 	public WebElement getMyMailLink() {
 		return myMailLink;
+	}
+	
+	public WebElement getQualifiedMailLink() {
+		return qualifiedMailLink;
 	}
 
 }
