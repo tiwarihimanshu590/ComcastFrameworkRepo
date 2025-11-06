@@ -41,7 +41,14 @@ public class HomePage {
 	@FindBy(name = "Vendors")
 	private WebElement vendorsLink;
 	
+	@FindBy(linkText = "Email")
+	private WebElement emailLink; 
 	
+	
+	public WebElement getEmailLink() {
+		return emailLink;
+	}
+
 	public WebElement getVendorsLink() {
 		return vendorsLink;
 	}
