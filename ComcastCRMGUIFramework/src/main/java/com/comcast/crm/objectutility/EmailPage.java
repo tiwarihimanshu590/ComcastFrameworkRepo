@@ -1,0 +1,24 @@
+package com.comcast.crm.objectutility;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class EmailPage {
+	
+	WebDriver driver;
+	public EmailPage(WebDriver driver)
+	{
+		this.driver=driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(linkText = "My Mails")
+	private WebElement myMailLink;
+	
+	public WebElement getMyMailLink() {
+		return myMailLink;
+	}
+
+}
