@@ -1,0 +1,19 @@
+<suite thread-count="3" parallel="tests" name="Suite">
+	<listeners>
+		<listener class-name="com.comcast.crm.listenerutility.ListenerImplementClass"></listener>
+	</listeners>
+  <test name="Test-1">
+    <classes>
+      <class name="com.comcast.crm.orgtest.CreateOrganzationTest"/>
+      <class name="com.comcast.crm.contacttest.CreateContactTest"/>
+    </classes>
+  </test> 
+  
+  <test name="Test-2">
+    <classes>
+      <class name="com.comcast.crm.producttest.CreateProductTest"/>
+      <class name="com.comcast.crm.documenttest.CreateDocumentsTest"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Suite -->

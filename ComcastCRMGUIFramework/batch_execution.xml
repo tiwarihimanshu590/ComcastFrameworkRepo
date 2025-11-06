@@ -1,0 +1,10 @@
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.comcast.crm.orgtest.CreateOrganzationTest"/>
+      <class name="com.comcast.crm.contacttest.CreateContactTest"/>
+      <class name="com.comcast.crm.producttest.CreateProductTest"/>
+      <class name="com.comcast.crm.documenttest.CreateDocumentsTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

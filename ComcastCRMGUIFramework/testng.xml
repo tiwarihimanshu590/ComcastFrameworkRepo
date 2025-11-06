@@ -1,0 +1,13 @@
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.comcast.crm.listenerutility.ListenerImplementClass"></listener>
+	</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.comcast.crm.orgtest.CreateOrganzationTest"/>
+      <class name="com.comcast.crm.contacttest.CreateContactTest"/>
+      <class name="com.comcast.crm.documenttest.CreateDocumentsTest"/>
+      <class name="com.comcast.crm.producttest.CreateProductTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
