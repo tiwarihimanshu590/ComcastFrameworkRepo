@@ -24,4 +24,8 @@ public class EmailPage {
 		return myMailLink;
 	}
 
+	public WebElement getAllMailsLink() {
+		return allMailsLink;
+	}
+
 }
