@@ -17,6 +17,9 @@ public class EmailPage {
 	@FindBy(linkText = "My Mails")
 	private WebElement myMailLink;
 	
+	@FindBy(linkText = "All Mails")
+	private WebElement allMailsLink;
+	
 	public WebElement getMyMailLink() {
 		return myMailLink;
 	}
