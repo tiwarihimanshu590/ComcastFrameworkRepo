@@ -20,12 +20,19 @@ public class EmailPage {
 	@FindBy(linkText = "Qualified Mails (As Contacts)")
 	private WebElement qualifiedMailLink;
 	
+	@FindBy(linkText = "All Mails")
+	private WebElement allMailsLink;
+	
 	public WebElement getMyMailLink() {
 		return myMailLink;
 	}
 	
 	public WebElement getQualifiedMailLink() {
 		return qualifiedMailLink;
+	}
+
+	public WebElement getAllMailsLink() {
+		return allMailsLink;
 	}
 
 }
