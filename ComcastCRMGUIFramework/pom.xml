@@ -68,6 +68,32 @@
     <version>5.0.9</version>
 </dependency>
 
+<!-- Lombok (works with Java 21) -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.32</version>
+</dependency>
+
+
   </dependencies>
+  
+  <build>
+        <plugins>
+
+            <!-- TestNG runner -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
   
 </project>
