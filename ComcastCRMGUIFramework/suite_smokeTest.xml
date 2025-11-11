@@ -1,4 +1,7 @@
 <suite name="Suite">
+<listeners>
+		<listener class-name="com.comcast.crm.listenerutility.ListenerImplementClass"></listener>
+</listeners>
 	<groups>
 		<run>
 			<include name="smokeTest"></include>
